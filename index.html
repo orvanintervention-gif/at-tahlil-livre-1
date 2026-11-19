@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230c1722'/%3E%3Crect x='5' y='5' width='54' height='54' rx='4' fill='none' stroke='%23c6a56f' stroke-width='2'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='32' fill='%23f6f1e8'%3EA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://orvanintervention-gif.github.io/at-tahlil-livre-1/">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="At-tahlil ha-ma'arakhti — Livre I · Sasha Bellalou">
+<meta property="og:description" content="Enquête systémique en 44 chapitres et 1 008 notes sur les engagements, les décisions, les responsabilités et les doubles standards dans le conflit israélo-palestinien.">
+<meta property="og:image" content="https://orvanintervention-gif.github.io/at-tahlil-livre-1/assets/hero_architecture.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="At-tahlil ha-ma'arakhti — Livre I · Sasha Bellalou">
+<meta name="twitter:description" content="44 chapitres · 1 008 notes sourcées · Dossier éditeur, extrait Ch. 30–31, PDF intégral et EPUB.">
+<meta name="twitter:image" content="https://orvanintervention-gif.github.io/at-tahlil-livre-1/assets/hero_architecture.jpg">
+<meta name="description" content="At-tahlil ha-ma'arakhti — Livre I par Sasha Bellalou : une enquête systémique en 44 chapitres et 1 008 notes sur le conflit israélo-palestinien.">
+<title>At-tahlil ha-ma'arakhti — Sasha Bellalou</title>
+<style>
+:root {
+  --bg: #f6f3ec;
+  --surface: #fffdf9;
+  --surface-alt: #eee8dd;
+  --ink: #101b26;
+  --ink-soft: #3a4956;
+  --muted: #667582;
+  --navy: #0c1722;
+  --navy-deep: #071018;
+  --accent: #8e3621;
+  --accent-hover: #6f2716;
+  --gold: #c6a56f;
+  --gold-soft: rgba(198, 165, 111, 0.34);
+  --line: #e2dacb;
+  --serif: "Palatino Linotype", "Book Antiqua", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --mono: Consolas, "SFMono-Regular", Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--accent); }
+.wrap { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+
+/* Subtle pre-publication ribbon */
+.draft {
+  background: var(--navy-deep);
+  color: #aab7c2;
+  border-bottom: 1px solid rgba(198, 165, 111, 0.16);
+  padding: 7px 18px;
+  text-align: center;
+  font: 500 11.5px/1.4 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Sticky top navigation */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(10, 19, 28, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(198, 165, 111, 0.22);
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 62px;
+}
+.brand {
+  color: #f6f1e8;
+  text-decoration: none;
+  font: 500 17px/1 var(--serif);
+  letter-spacing: 0.015em;
+}
+.brand span {
+  color: var(--gold);
+  font: 700 10.5px/1 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-left: 10px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #cfd8e0;
+  text-decoration: none;
+  font: 500 13px/1 var(--sans);
+  letter-spacing: 0.03em;
+  transition: color 0.18s ease;
+}
+.nav-links a:hover { color: #ffffff; }
+.nav-cta {
+  padding: 8px 14px;
+  border-radius: 3px;
+  border: 1px solid rgba(198, 165, 111, 0.52);
+  color: #f4ece0 !important;
+  background: rgba(198, 165, 111, 0.1);
+}
+.nav-cta:hover { background: rgba(198, 165, 111, 0.22); }
+
+/* Cinematic Architectural Hero */
+header.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy);
+  color: #f8f5ef;
+  padding: 92px 0 98px;
+  border-bottom: 1px solid var(--gold-soft);
+}
+.hero-bg {
+  position: absolute;
+  inset: -4%;
+  width: 108%;
+  height: 108%;
+  object-fit: cover;
+  object-position: 70% 45%;
+  opacity: 0.56;
+  filter: saturate(0.88) contrast(1.04);
+  animation: slowDrift 28s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes slowDrift {
+  from { transform: scale(1.0) translate3d(0, 0, 0); }
+  to   { transform: scale(1.045) translate3d(-1.2%, -0.8%, 0); }
+}
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(96deg, rgba(8, 15, 23, 0.96) 0%, rgba(10, 19, 29, 0.88) 46%, rgba(12, 22, 33, 0.52) 78%, rgba(8, 15, 23, 0.74) 100%),
+    linear-gradient(180deg, rgba(8, 15, 23, 0.45) 0%, transparent 28%, rgba(8, 15, 23, 0.65) 100%);
+  pointer-events: none;
+}
+.hero-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.32fr) minmax(270px, 0.82fr);
+  gap: 58px;
+  align-items: center;
+}
+.kicker, .eyebrow {
+  font: 700 11.5px/1.3 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  margin: 0 0 14px;
+}
+h1 {
+  font: 500 clamp(42px, 5.8vw, 68px)/1.03 var(--serif);
+  letter-spacing: -0.015em;
+  margin: 0 0 14px;
+  color: #ffffff;
+  text-shadow: 0 4px 28px rgba(0, 0, 0, 0.45);
+}
+.subtitle-hero {
+  font: italic 400 20.5px/1.42 var(--serif);
+  color: #e3d3ba;
+  margin: 0 0 24px;
+  max-width: 600px;
+}
+.byline {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font: 700 13.5px/1 var(--sans);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #f3eadc;
+  margin: 0 0 26px;
+}
+.byline::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 1px;
+  background: var(--gold);
+}
+.lead {
+  font: 400 18px/1.64 var(--serif);
+  color: #e2e8ee;
+  max-width: 600px;
+  margin: 0 0 36px;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.btn-primary, .btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font: 600 13.5px/1 var(--sans);
+  letter-spacing: 0.04em;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  border: 1px solid var(--accent);
+  box-shadow: 0 12px 28px rgba(142, 54, 33, 0.42);
+}
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+.btn-ghost {
+  background: rgba(10, 19, 29, 0.56);
+  backdrop-filter: blur(8px);
+  color: #f6f0e6;
+  border: 1px solid rgba(198, 165, 111, 0.55);
+}
+.btn-ghost:hover { background: rgba(198, 165, 111, 0.2); border-color: var(--gold); transform: translateY(-1px); }
+
+/* Sculpted 3D Book Object */
+.book-stage {
+  display: flex;
+  justify-content: center;
+  perspective: 1400px;
+}
+.book-object {
+  position: relative;
+  width: 296px;
+  min-height: 430px;
+  background: linear-gradient(148deg, #fbf7ef 0%, #ede5d5 100%);
+  color: #13202c;
+  border-radius: 3px 9px 9px 3px;
+  padding: 28px 26px 24px 36px;
+  box-shadow:
+    inset 16px 0 22px -12px rgba(14, 24, 34, 0.34),
+    inset 2px 0 0 rgba(255, 255, 255, 0.72),
+    7px 7px 0 -1px #e4dbc8,
+    8px 8px 0 0 #b7a88f,
+    0 34px 70px rgba(0, 0, 0, 0.58);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: rotateY(-7deg) rotateX(1deg);
+  transition: transform 0.45s cubic-bezier(.22,.61,.36,1);
+}
+.book-object:hover { transform: rotateY(-1deg) rotateX(0deg) translateY(-4px); }
+.book-frame {
+  border: 1px solid rgba(142, 54, 33, 0.36);
+  outline: 1px solid rgba(198, 165, 111, 0.62);
+  outline-offset: 5px;
+  padding: 24px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.book-author {
+  font: 700 11px/1.3 var(--sans);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #465460;
+}
+.book-title {
+  font: 600 28px/1.12 var(--serif);
+  color: #101b26;
+  margin: 18px 0 10px;
+}
+.book-rule {
+  width: 44px;
+  height: 2px;
+  background: var(--accent);
+  margin: 12px auto;
+}
+.book-vol {
+  font: 700 11px/1.3 var(--sans);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.book-sub {
+  font: italic 400 13.5px/1.45 var(--serif);
+  color: #4b5a67;
+  margin-top: 12px;
+}
+.book-colophon {
+  font: 600 10px/1.4 var(--sans);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b7884;
+  border-top: 1px solid #d9cfbe;
+  padding-top: 12px;
+}
+
+/* Key figures ribbon */
+.metrics-strip {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 6px 24px rgba(16, 27, 38, 0.04);
+}
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.metric {
+  padding: 24px 16px;
+  text-align: center;
+  border-right: 1px solid var(--line);
+}
+.metric:last-child { border-right: 0; }
+.metric-val {
+  display: block;
+  font: 600 25px/1.1 var(--serif);
+  color: var(--ink);
+}
+.metric-lbl {
+  display: block;
+  margin-top: 6px;
+  font: 600 10.5px/1.3 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--muted);
+}
+
+/* Main editorial rhythm */
+main { padding: 72px 0 96px; }
+section { margin: 0 0 88px; }
+section:last-child { margin-bottom: 0; }
+.section-head {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+.section-head .eyebrow { color: var(--accent); margin-bottom: 8px; }
+h2 {
+  font: 500 clamp(29px, 3.4vw, 40px)/1.13 var(--serif);
+  letter-spacing: -0.015em;
+  margin: 0 0 14px;
+  color: var(--ink);
+}
+h3 {
+  font: 600 22px/1.26 var(--serif);
+  margin: 0 0 10px;
+  color: var(--ink);
+}
+.intro {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 17.5px;
+}
+
+/* Three fine-art illustrated movement cards */
+.movements {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.movement {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 26px rgba(16, 27, 38, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.movement:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(16, 27, 38, 0.1);
+}
+.movement-media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--navy);
+  border-bottom: 2px solid var(--gold);
+}
+.movement-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s cubic-bezier(.22,.61,.36,1);
+}
+.movement:hover .movement-media img { transform: scale(1.05); }
+.movement-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 42%, rgba(10, 19, 28, 0.68) 100%);
+  pointer-events: none;
+}
+.movement-roman {
+  position: absolute;
+  left: 18px;
+  bottom: 12px;
+  z-index: 2;
+  font: 600 11.5px/1 var(--sans);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f3e6cf;
+}
+.movement-body {
+  padding: 24px 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.movement-body p {
+  margin: 6px 0 18px;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+  line-height: 1.62;
+  flex: 1;
+}
+.movement-range {
+  font: 700 11.5px/1 var(--sans);
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.transversal-note {
+  margin-top: 22px;
+  padding: 20px 26px;
+  background: var(--surface-alt);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 6px 6px 0;
+  font-size: 15.5px;
+  color: var(--ink-soft);
+}
+.transversal-note strong { color: var(--ink); }
+
+/* Interactive Salon de Lecture (real verbatim excerpts) */
+.salon-shell {
+  background: var(--navy);
+  color: #f6f1e8;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(198, 165, 111, 0.28);
+  box-shadow: 0 22px 54px rgba(12, 23, 34, 0.16);
+}
+.salon-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(198, 165, 111, 0.22);
+  background: rgba(7, 16, 24, 0.6);
+}
+.salon-tab {
+  flex: 1 1 200px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  color: #aebcc8;
+  padding: 18px 20px;
+  font: 600 13px/1.3 var(--sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+}
+.salon-tab:hover { color: #ffffff; background: rgba(255, 255, 255, 0.03); }
+.salon-tab.is-active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+  background: rgba(198, 165, 111, 0.08);
+}
+.salon-panel {
+  padding: 36px 40px 40px;
+}
+.salon-panel h3 {
+  color: #ffffff;
+  font-size: 27px;
+  margin: 0 0 10px;
+}
+.salon-lead {
+  color: #c8d3dc;
+  font-size: 15.5px;
+  font-family: var(--sans);
+  line-height: 1.58;
+  max-width: 780px;
+  margin: 0 0 26px;
+}
+.salon-quote {
+  border-left: 2px solid var(--gold);
+  padding: 4px 0 4px 26px;
+  color: #f1ece2;
+  font-size: 17px;
+  line-height: 1.74;
+}
+.salon-quote p { margin: 0 0 16px; }
+.salon-quote p:last-child { margin-bottom: 0; }
+.salon-quote sup.fn {
+  color: var(--gold);
+  font: 600 11px/1 var(--sans);
+  margin-left: 2px;
+}
+
+/* Interactive 44-chapter Explorer */
+.explorer-box {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 26px 28px;
+  margin-top: 26px;
+}
+.explorer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 18px;
+}
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-btn {
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--ink-soft);
+  border-radius: 3px;
+  padding: 8px 13px;
+  font: 600 12.5px/1 var(--sans);
+  cursor: pointer;
+  transition: all 0.16s ease;
+}
+.filter-btn:hover { border-color: var(--gold); color: var(--ink); }
+.filter-btn.is-active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #f7f2e8;
+}
+.search-input {
+  min-width: 260px;
+  flex: 0 1 320px;
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #fbf9f4;
+  color: var(--ink);
+  font: 400 13.5px/1.2 var(--sans);
+}
+.search-input:focus { outline: 2px solid rgba(198, 165, 111, 0.5); border-color: var(--gold); }
+.ch-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 24px;
+  max-height: 440px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+.ch-card {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px dotted #e4dccd;
+}
+.ch-idx {
+  font: 700 12px/1 var(--sans);
+  color: var(--accent);
+}
+.ch-tag {
+  display: block;
+  font: 700 10px/1.2 var(--sans);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+.ch-name {
+  font: 400 14.5px/1.4 var(--serif);
+  color: var(--ink);
+}
+.explorer-count {
+  margin: 14px 0 0;
+  font: 600 12px/1 var(--sans);
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+/* Method pillars */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.pillar {
+  padding: 24px 0 0;
+  border-top: 2px solid var(--gold);
+}
+.pillar-idx {
+  font: 700 11.5px/1 var(--sans);
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.pillar p {
+  margin: 8px 0 0;
+  color: var(--ink-soft);
+  font-size: 15.5px;
+}
+
+/* 4 Download cards */
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.download {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px 26px 22px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 5px 20px rgba(16, 27, 38, 0.04);
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+.download-featured {
+  border-color: var(--gold);
+  background: linear-gradient(155deg, #fffdf9 0%, #f8f2e6 100%);
+}
+.download:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(16, 27, 38, 0.1);
+}
+.download-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  background: #f0e7d8;
+  color: var(--accent);
+  font: 700 10.5px/1 var(--sans);
+  letter-spacing: 0.13em;
+}
+.download-featured .badge {
+  background: var(--accent);
+  color: #ffffff;
+}
+.arrow {
+  font: 500 20px/1 var(--sans);
+  color: var(--accent);
+}
+.download-label {
+  font: 600 20px/1.25 var(--serif);
+  color: var(--ink);
+}
+.download-desc {
+  font: 400 14.5px/1.55 var(--serif);
+  color: var(--ink-soft);
+  flex: 1;
+}
+.download-meta {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  font: 600 12.5px/1.3 var(--sans);
+  color: var(--ink);
+}
+.download-hash {
+  font: 400 11.5px/1.3 var(--mono);
+  color: var(--muted);
+}
+
+/* Audit protocol cards */
+.prompts-stack { display: grid; gap: 18px; }
+.prompt-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px 26px;
+}
+.prompt-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.prompt-head .eyebrow { color: var(--accent); margin-bottom: 5px; }
+.prompt-head h3 { margin: 0 0 6px; }
+.prompt-head p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+.copy {
+  flex: 0 0 auto;
+  border: 1px solid var(--navy);
+  border-radius: 4px;
+  background: var(--navy);
+  color: #ffffff;
+  padding: 11px 18px;
+  font: 600 13px/1 var(--sans);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.16s ease, border-color 0.16s ease;
+}
+.copy:hover { background: var(--accent); border-color: var(--accent); }
+.prompt-details {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.prompt-details summary {
+  cursor: pointer;
+  font: 600 13px/1.3 var(--sans);
+  color: var(--muted);
+  user-select: none;
+}
+.prompt-details summary:hover { color: var(--ink); }
+.prompt-details textarea {
+  display: block;
+  width: 100%;
+  height: 230px;
+  margin-top: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f9f7f2;
+  color: #273642;
+  font: 400 13px/1.55 var(--mono);
+  resize: vertical;
+}
+.notice {
+  margin-top: 20px;
+  padding: 18px 22px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--navy);
+  border-radius: 0 5px 5px 0;
+  color: var(--ink-soft);
+  font-size: 15px;
+}
+.notice strong { color: var(--ink); }
+
+/* Rights & Footer */
+.rights {
+  padding: 28px 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font: 400 14px/1.65 var(--sans);
+  color: var(--ink-soft);
+}
+.rights strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+footer {
+  padding: 32px 0;
+  background: var(--navy);
+  color: #a9b8c5;
+  font: 400 13px/1.6 var(--sans);
+  border-top: 1px solid var(--gold-soft);
+}
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+}
+.toast {
+  position: fixed;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  background: var(--navy);
+  color: #ffffff;
+  border: 1px solid var(--gold);
+  padding: 11px 18px;
+  border-radius: 4px;
+  font: 600 13px/1 var(--sans);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Gentle scroll reveal */
+.reveal { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
+.js-ready .reveal { opacity: 0; transform: translateY(18px); }
+.js-ready .reveal.is-visible { opacity: 1; transform: none; }
+
+@media (max-width: 980px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+  .book-stage { justify-content: flex-start; }
+  .metrics-grid { grid-template-columns: repeat(3, 1fr); }
+  .metric:nth-child(3) { border-right: 0; }
+  .metric:nth-child(n+4) { border-top: 1px solid var(--line); }
+  .movements, .pillars, .downloads, .ch-grid { grid-template-columns: 1fr; }
+  .salon-panel { padding: 26px 22px 30px; }
+}
+@media (max-width: 640px) {
+  .wrap { width: min(100% - 32px, 1160px); }
+  .nav-links { display: none; }
+  header.hero { padding: 54px 0 64px; }
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .prompt-head { flex-direction: column; align-items: flex-start; }
+  .book-object { width: 250px; min-height: 368px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; }
+  .js-ready .reveal { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="Navigation principale">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#">At-tahlil ha-ma’arakhti <span>Livre I</span></a>
+    <ul class="nav-links">
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#salon">Extraits</a></li>
+      <li><a href="#methode">Méthode</a></li>
+      <li><a href="#mettre-a-lepreuve">Audit critique</a></li>
+      <li><a class="nav-cta" href="#livre">Dossier &amp; PDF</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="hero-bg" src="assets/hero_architecture.jpg" alt="" aria-hidden="true">
+  <div class="hero-scrim" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Livre I · Essai d’analyse systémique</p>
+      <h1>At-tahlil ha-ma’arakhti</h1>
+      <p class="subtitle-hero">Engagements, décisions, responsabilités et balance du monde dans le conflit israélo-palestinien</p>
+      <p class="byline">Sasha Bellalou</p>
+      <p class="lead">Une enquête de fond soumettant à une seule règle logique invariante les textes religieux invoqués, l’histoire politique et le droit international jusqu’au 13 novembre 2026, puis la mesure exacte des doubles standards mondiaux.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="downloads/Dossier_Editeur_At-tahlil_Livre-I.pdf" download>Dossier éditeur (4 p. PDF) ↓</a>
+        <a class="btn-ghost" href="downloads/At-tahlil-ha-maarakhti_Livre-I_edition-numerique.pdf" download>Livre intégral (772 p.)</a>
+      </div>
+    </div>
+    <div class="book-stage" aria-hidden="true">
+      <div class="book-object">
+        <div class="book-frame">
+          <div class="book-author">Sasha Bellalou</div>
+          <div>
+            <div class="book-title">At-tahlil ha-ma’arakhti</div>
+            <div class="book-rule"></div>
+            <div class="book-vol">Livre I</div>
+            <div class="book-sub">Enquête systémique sur le conflit israélo-palestinien</div>
+          </div>
+          <div class="book-colophon">44 chapitres · 1 008 notes</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="metrics-strip">
+  <div class="wrap metrics-grid">
+    <div class="metric"><span class="metric-val">44</span><span class="metric-lbl">Chapitres</span></div>
+    <div class="metric"><span class="metric-val">1 008</span><span class="metric-lbl">Notes sourcées</span></div>
+    <div class="metric"><span class="metric-val">224 836</span><span class="metric-lbl">Mots</span></div>
+    <div class="metric"><span class="metric-val">772</span><span class="metric-lbl">Pages (PDF A5)</span></div>
+    <div class="metric"><span class="metric-val">13 nov. 2026</span><span class="metric-lbl">Arrêté documentaire</span></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="architecture" class="reveal">
+    <div class="section-head">
+      <p class="eyebrow">Architecture de l’ouvrage</p>
+      <h2>Trois mouvements, une même exigence de cohérence</h2>
+      <p class="intro">La première partie invite le lecteur non croyant à examiner de l’intérieur la cohérence des textes invoqués par les acteurs, avant de retirer ce cadre dans les deuxième et troisième parties, entièrement fondées sur l’histoire, le droit et les faits vérifiables.</p>
+    </div>
+    <div class="movements">
+      <article class="movement">
+        <div class="movement-media">
+          <img src="assets/part1_scriptures.jpg" alt="Parchemins anciens et volumes classiques en clair-obscur">
+          <span class="movement-roman">I · Les Écritures</span>
+        </div>
+        <div class="movement-body">
+          <h3>Le débat religieux</h3>
+          <p>Torah, Tanakh, Coran, commentaires classiques et Trois Serments : ce que fondent réellement les textes, ce qu’ils limitent et le double verrou qu’ils imposent aux acteurs qui s’en réclament.</p>
+          <div class="movement-range">Chapitres 01 à 12</div>
+        </div>
+      </article>
+      <article class="movement">
+        <div class="movement-media">
+          <img src="assets/part2_archives.jpg" alt="Dossiers d’archives diplomatiques et carte ancienne du Levant">
+          <span class="movement-roman">II · Histoire &amp; Droit</span>
+        </div>
+        <div class="movement-body">
+          <h3>Politique, guerre et responsabilités</h3>
+          <p>De 1917 au 13 novembre 2026 : réfugiés, occupation, gouvernance du Hamas, 7 octobre, riposte à Gaza, pesée symétrique sur le génocide, mise à l’abri temporaire et reconstruction.</p>
+          <div class="movement-range">Chapitres 13 à 32</div>
+        </div>
+      </article>
+      <article class="movement">
+        <div class="movement-media">
+          <img src="assets/part3_balance.jpg" alt="Balance en laiton et obsidienne dans un hall architectural néoclassique">
+          <span class="movement-roman">III · Comparaison</span>
+        </div>
+        <div class="movement-body">
+          <h3>La balance du monde</h3>
+          <p>Soustraction préalable des alliances et comparaison rigoureuse des naissances d’États, occupations, guerres urbaines, sanctions, institutions onusiennes, médias, boycotts et solidarités.</p>
+          <div class="movement-range">Chapitres 33 à 44</div>
+        </div>
+      </article>
+    </div>
+    <div class="transversal-note">
+      <strong>Compléments inclus :</strong> une <em>Étude transversale autonome</em> sur le devoir de secours des États tiers, une <em>Conclusion générale</em>, une <em>Note au lecteur</em> où l’auteur expose son identité et s’impose ses propres critères, 1 008 notes liées, une bibliographie classée et un index thématique.
+    </div>
+
+    <div class="explorer-box">
+      <div class="explorer-controls">
+        <div class="filter-group" role="group" aria-label="Filtrer par partie">
+          <button class="filter-btn is-active" type="button" data-filter="all">Tous (44)</button>
+          <button class="filter-btn" type="button" data-filter="p1">I · Religion (12)</button>
+          <button class="filter-btn" type="button" data-filter="p2">II · Histoire &amp; Droit (20)</button>
+          <button class="filter-btn" type="button" data-filter="p3">III · Balance du monde (12)</button>
+        </div>
+        <input class="search-input" id="ch-search" type="search" placeholder="Filtrer par thème (génocide, Coran, 1948, ONU…)" aria-label="Rechercher un chapitre">
+      </div>
+      <ol class="ch-grid" id="ch-grid">
+        <li class="ch-card" data-part="p1" data-search="chapitre 1 les croyances des acteurs font partie de l’enquête i · religion"><span class="ch-idx">01</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Les croyances des acteurs font partie de l’enquête</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 2 la torah fonde le lien juif à la terre i · religion"><span class="ch-idx">02</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">La Torah fonde le lien juif à la terre</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 3 dans le tanakh, la providence passe aussi par la politique i · religion"><span class="ch-idx">03</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Dans le Tanakh, la providence passe aussi par la politique</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 4 exil, dispersion, survie et retour : la force d’une convergence i · religion"><span class="ch-idx">04</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Exil, dispersion, survie et retour : la force d’une convergence</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 5 la torah, le coran et l’objection de falsification i · religion"><span class="ch-idx">05</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">La Torah, le Coran et l’objection de falsification</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 6 le coran et la terre sainte i · religion"><span class="ch-idx">06</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Le Coran et la Terre sainte</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 7 torah et coran : ce qu’implique une même source divine i · religion"><span class="ch-idx">07</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Torah et Coran : ce qu’implique une même source divine</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 8 le retour juif devant ceux qui reconnaissent le même dieu i · religion"><span class="ch-idx">08</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Le retour juif devant ceux qui reconnaissent le même Dieu</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 9 les trois serments et la légitimité religieuse du retour i · religion"><span class="ch-idx">09</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Les Trois Serments et la légitimité religieuse du retour</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 10 le territoire biblique et les droits de ceux qui l’habitent i · religion"><span class="ch-idx">10</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Le territoire biblique et les droits de ceux qui l’habitent</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 11 israël et le hamas à l’épreuve de leurs références religieuses i · religion"><span class="ch-idx">11</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">Israël et le Hamas à l’épreuve de leurs références religieuses</span></div></li>
+<li class="ch-card" data-part="p1" data-search="chapitre 12 la conclusion religieuse : le retour, la souveraineté et les devoirs qu’ils engagent i · religion"><span class="ch-idx">12</span><div class="ch-body"><span class="ch-tag">I · Religion</span><span class="ch-name">La conclusion religieuse : le retour, la souveraineté et les devoirs qu’ils engagent</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 13 défendre les palestiniens et soutenir un camp dans la guerre : quelles différences ? ii · histoire &amp; droit"><span class="ch-idx">13</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Défendre les Palestiniens et soutenir un camp dans la guerre : quelles différences ?</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 14 une même méthode peut conduire à des responsabilités différentes ii · histoire &amp; droit"><span class="ch-idx">14</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Une même méthode peut conduire à des responsabilités différentes</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 15 deux peuples et leurs revendications sur une même terre ii · histoire &amp; droit"><span class="ch-idx">15</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Deux peuples et leurs revendications sur une même terre</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 16 de 1917 à 1947 : promesses impériales, administration britannique, révoltes et crise des réfugiés ii · histoire &amp; droit"><span class="ch-idx">16</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 1917 à 1947 : promesses impériales, administration britannique, révoltes et crise des réfugiés</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 17 de 1947 à 1949 : le partage, la naissance d’israël, la guerre et la nakba ii · histoire &amp; droit"><span class="ch-idx">17</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 1947 à 1949 : le partage, la naissance d’Israël, la guerre et la Nakba</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 18 les réfugiés palestiniens : droits, propriété, retour et réparation ii · histoire &amp; droit"><span class="ch-idx">18</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Les réfugiés palestiniens : droits, propriété, retour et réparation</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 19 de 1949 à 1967 : deux sociétés après la rupture, les palestiniens dans les états arabes, frontières, infiltrations et représailles ii · histoire &amp; droit"><span class="ch-idx">19</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 1949 à 1967 : deux sociétés après la rupture, les Palestiniens dans les États arabes, frontières, infiltrations et représailles</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 20 depuis 1967 : sécurité, occupation, implantations et possibilités de paix ii · histoire &amp; droit"><span class="ch-idx">20</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Depuis 1967 : sécurité, occupation, implantations et possibilités de paix</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 21 de 1968 à 1993 : nationalisme palestinien armé, jordanie et liban, paix égypto-israélienne, première intifada et tournant de 1988 ii · histoire &amp; droit"><span class="ch-idx">21</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 1968 à 1993 : nationalisme palestinien armé, Jordanie et Liban, paix égypto-israélienne, première Intifada et tournant de 1988</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 22 de 1993 à 2005 : le processus d&#x27;oslo, l&#x27;échec du règlement final et la seconde intifada ii · histoire &amp; droit"><span class="ch-idx">22</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 1993 à 2005 : le processus d&#x27;Oslo, l&#x27;échec du règlement final et la seconde Intifada</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 23 le hamas, le pouvoir et la société à gaza ii · histoire &amp; droit"><span class="ch-idx">23</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Le Hamas, le pouvoir et la société à Gaza</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 24 de 2005 à 2023 : le retrait de gaza, la scission palestinienne, le blocus, les roquettes, les guerres répétées et les soutiens extérieurs ii · histoire &amp; droit"><span class="ch-idx">24</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">De 2005 à 2023 : le retrait de Gaza, la scission palestinienne, le blocus, les roquettes, les guerres répétées et les soutiens extérieurs</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 25 le 7 octobre : les actes, leur préparation et le tournant du conflit ii · histoire &amp; droit"><span class="ch-idx">25</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Le 7 octobre : les actes, leur préparation et le tournant du conflit</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 26 la stratégie du hamas et l’exposition de la population de gaza ii · histoire &amp; droit"><span class="ch-idx">26</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">La stratégie du Hamas et l’exposition de la population de Gaza</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 27 la réponse israélienne : objectifs, choix militaires et responsabilités ii · histoire &amp; droit"><span class="ch-idx">27</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">La réponse israélienne : objectifs, choix militaires et responsabilités</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 28 l’accusation de génocide : les preuves, les objections et le verdict d’auteur ii · histoire &amp; droit"><span class="ch-idx">28</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">L’accusation de génocide : les preuves, les objections et le verdict d’auteur</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 29 opinion publique, soutien à la violence et responsabilité morale ii · histoire &amp; droit"><span class="ch-idx">29</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Opinion publique, soutien à la violence et responsabilité morale</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 30 mettre les populations à l’abri : la vie, l’accueil et le droit de revenir ii · histoire &amp; droit"><span class="ch-idx">30</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Mettre les populations à l’abri : la vie, l’accueil et le droit de revenir</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 31 la réhabilitation et la reconstruction palestiniennes ii · histoire &amp; droit"><span class="ch-idx">31</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">La réhabilitation et la reconstruction palestiniennes</span></div></li>
+<li class="ch-card" data-part="p2" data-search="chapitre 32 conclusion générale de la partie politique : responsabilités, sécurité d’israël et avenir des palestiniens ii · histoire &amp; droit"><span class="ch-idx">32</span><div class="ch-body"><span class="ch-tag">II · Histoire & Droit</span><span class="ch-name">Conclusion générale de la partie politique : responsabilités, sécurité d’Israël et avenir des Palestiniens</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 33 comparer les jugements : quand y a-t-il double standard ? iii · balance du monde"><span class="ch-idx">33</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Comparer les jugements : quand y a-t-il double standard ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 34 la naissance d’israël à l’épreuve des autres naissances iii · balance du monde"><span class="ch-idx">34</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">La naissance d’Israël à l’épreuve des autres naissances</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 35 occupation, annexion et implantation : les mêmes règles territoriales ? iii · balance du monde"><span class="ch-idx">35</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Occupation, annexion et implantation : les mêmes règles territoriales ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 36 terrorisme et guerre : juge-t-on les moyens avec la même mesure ? iii · balance du monde"><span class="ch-idx">36</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Terrorisme et guerre : juge-t-on les moyens avec la même mesure ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 37 guerres urbaines, sièges, bilans civils et sanctions : les conflits armés sont-ils jugés avec la même mesure ? iii · balance du monde"><span class="ch-idx">37</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Guerres urbaines, sièges, bilans civils et sanctions : les conflits armés sont-ils jugés avec la même mesure ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 38 institutions internationales : comment se construit la condamnation ? iii · balance du monde"><span class="ch-idx">38</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Institutions internationales : comment se construit la condamnation ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 39 médias, émotions et opinion : comment un jugement devient-il dominant ? iii · balance du monde"><span class="ch-idx">39</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Médias, émotions et opinion : comment un jugement devient-il dominant ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 40 boycotts et délégitimation : que condamne-t-on exactement ? iii · balance du monde"><span class="ch-idx">40</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Boycotts et délégitimation : que condamne-t-on exactement ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 41 solidarité avec les palestiniens : que produisent les principes proclamés ? iii · balance du monde"><span class="ch-idx">41</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Solidarité avec les Palestiniens : que produisent les principes proclamés ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 42 intérêt national et universalisme : quelle justice envers l’adversaire ? iii · balance du monde"><span class="ch-idx">42</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Intérêt national et universalisme : quelle justice envers l’adversaire ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 43 religion et politique étrangère : les acteurs acceptent-ils leur propre règle ? iii · balance du monde"><span class="ch-idx">43</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Religion et politique étrangère : les acteurs acceptent-ils leur propre règle ?</span></div></li>
+<li class="ch-card" data-part="p3" data-search="chapitre 44 une terre, deux mesures ? les conclusions de la comparaison iii · balance du monde"><span class="ch-idx">44</span><div class="ch-body"><span class="ch-tag">III · Balance du monde</span><span class="ch-name">Une terre, deux mesures ? Les conclusions de la comparaison</span></div></li>
+      </ol>
+      <p class="explorer-count" id="ch-count">44 chapitres affichés sur 44</p>
+    </div>
+  </section>
+
+  <section id="salon" class="reveal">
+    <div class="section-head">
+      <p class="eyebrow">Salon de lecture</p>
+      <h2>Lire trois passages décisifs en deux minutes</h2>
+      <p class="intro">Extraits authentiques tirés directement de l’édition vérifiée du 19 novembre 2026 pour juger immédiatement la tenue de l’argumentation et la précision du style.</p>
+    </div>
+    <div class="salon-shell">
+      <div class="salon-tabs" role="tablist" aria-label="Choix d’extraits">
+        <button class="salon-tab is-active" type="button" role="tab" aria-selected="true" data-tab="ext-1">I · Cohérence religieuse</button>
+<button class="salon-tab" type="button" role="tab" aria-selected="false" data-tab="ext-2">II · Génocide &amp; symétrie</button>
+<button class="salon-tab" type="button" role="tab" aria-selected="false" data-tab="ext-3">III · Issue &amp; balance du monde</button>
+      </div>
+      <article class="salon-panel is-active" id="ext-1" role="tabpanel">
+              <p class="eyebrow">Première partie · Chapitres 4, 6 &amp; 9</p>
+              <h3>Volonté, décret historique et double verrou des Trois Serments</h3>
+              <p class="salon-lead">Comment le livre teste les textes religieux selon leurs propres prémisses — sans demander au lecteur laïque d’adhérer à une foi — et retourne la tradition à la fois contre l’antisionisme théologique et contre l’annexionnisme.</p>
+              <div class="salon-quote"><p>À l’objection selon laquelle cette convergence ne tiendrait qu’à une prophétie autoréalisatrice portée par des croyants attachés à leurs textes, il convient d’opposer une distinction simple : vouloir rester ou revenir ne crée pas la possibilité historique d’y parvenir. Dans le Tanakh même, les Juifs ne souhaitent pas être expulsés, combattent pour conserver la terre et désirent y revenir, y compris sous Cyrus ; leur volonté est constante, mais elle ne suffit pas à expliquer la possibilité d’une survie diasporique bimillénaire sans souveraineté suivie d’une restauration étatique majoritairement votée aux Nations unies en 1947 — une unanimité absolue des nations étant par nature illusoire. Cette convergence ne prétend pas au statut de preuve scientifique : elle fonde, à l’intérieur des prémisses religieuses, une forte hypothèse providentielle. Le lecteur non croyant est invité à suivre ce raisonnement de l’intérieur dans cette première partie pour comprendre la cohérence de la perspective religieuse, avant de retirer ce cadre dans les deuxième et troisième parties, qui reposent entièrement sur l’histoire, le droit et les faits humains.</p>
+<p>L’histoire de l’exégèse de ces versets (17:4–8) fait d’ailleurs apparaître un dilemme logique révélateur. Les grands commentaires classiques — tels qu’al-Ṭabarī, al-Qurṭubī ou Ibn Kathīr — lisent majoritairement les deux séquences de corruption et de châtiment au passé, en les rattachant aux destructions antiques de Jérusalem et du Temple ; dans cette lecture, le passage ne prophétise rien contre l’État d’Israël moderne et ne laisse subsister que l’avertissement moral général du verset 17:8. À l’inverse, lorsque des courants politiques et islamistes contemporains déplacent la seconde prédiction dans le futur pour annoncer une reconquête musulmane face à l’Israël moderne, ils se heurtent à une implication logique directe du verset 17:6, qui précède immédiatement ce second châtiment : les Juifs ne détenant aucune souveraineté en Palestine à l’époque de la révélation coranique, faire du second châtiment un événement futur oblige à admettre que le retour souverain, le rétablissement et la puissance annoncés au verset 17:6 relèvent eux-mêmes d’un décret divin historique inscrit dans le Coran. Même lorsque l’exégète distingue décret historique et approbation morale, le débat se déplace ainsi vers la justice de la conduite plutôt que vers une négation de principe du retour. <sup class="fn">77</sup></p></div>
+            </article>
+<article class="salon-panel" id="ext-2" role="tabpanel" hidden>
+              <p class="eyebrow">Deuxième partie · Chapitres 25 &amp; 28</p>
+              <h3>Portée opérationnelle, contre-actes et seuil de la seule inférence raisonnable</h3>
+              <p class="salon-lead">Appliquer un seul cadre juridique aux deux camps, intégrer les pièces les plus lourdes à contre-charge jusqu’au 13 novembre 2026 et nommer explicitement le maillon le plus contestable de son propre jugement.</p>
+              <div class="salon-quote"><p>Cette comparaison repose sur deux distinctions logiques décisives concernant la portée opérationnelle et la nature des contre-indices. Premièrement, la jurisprudence relative à la partie visée tient explicitement compte de la zone d’activité, de contrôle et de portée effective des auteurs : le 7 octobre, le Hamas n’avait pas à sa portée l’ensemble des quelque sept millions de Juifs d’Israël, mais une petite fraction locale dans les communautés attaquées ; or, dans cet espace brièvement atteint, les civils saisis ont été massivement tués ou enlevés. Si quelques témoignages isolés de survivants font état de gestes ponctuels où un combattant a laissé un couple âgé ou des enfants sans les exécuter sur place, aucune enquête indépendante n’établit une politique ni une consigne de retenue : la survie du plus grand nombre dans ces localités a résulté de la fuite, des pièces sécurisées ou de l’intervention armée, contre la volonté des assaillants. Deuxièmement, un mobile coexistant qui n’entrave pas la tuerie — prendre des otages comme monnaie d’échange tout en massacrant à vue femmes, enfants et personnes âgées — ne joue pas comme une preuve en défaveur du génocide, à la différence de contre-actes coûteux qui réduisent activement le nombre de morts : alors que la quasi-totalité de la population de Gaza se trouve durablement à portée militaire directe d’Israël, les évacuations ordonnées sur un territoire dont environ 80 % du bâti a été endommagé — sans lesquelles le bilan humain aurait dépassé de très loin les 3 à 4 % estimés — ainsi que la campagne antipolio constituent des indices factuels en sens contraire. Parvenir à deux verdicts différents ne résulte donc pas d’une double mesure de méthode, mais de la dissymétrie matérielle des conduites observées ; il reste que l’appréciation juridique de la substantialité sur le 7 octobre demeure le point le plus débattu en droit pénal international. <sup class="fn">180</sup>, <sup class="fn">646</sup>, <sup class="fn">648</sup></p>
+<p>Il ne faut donc pas prétendre que les dirigeants politiques auteurs de ces déclarations n’avaient aucun poids dans la guerre : Yoav Gallant dirigeait le ministère de la Défense et Benjamin Netanyahu le gouvernement. La démonstration que leurs formules les plus extrêmes (« tout est fermé / rien ne rentre » ou la référence à Amalek) n’ont pas été exécutées à la lettre comme programme d’extermination réside dans l’écart mesurable entre la littéralité du propos initial et la conduite ultérieure d’ensemble — filtrée par les directives écrites, l’encadrement juridique militaire, la reprise des entrées d’aide, les évacuations et les campagnes sanitaires. Cet écart ne rend ces discours ni anodins ni excusables ; il empêche de les lire comme un ordre littéral exécuté sans contrepoids.</p></div>
+            </article>
+<article class="salon-panel" id="ext-3" role="tabpanel" hidden>
+              <p class="eyebrow">Chapitres 30–31 &amp; 44</p>
+              <h3>Verrous matériels du retour et soustraction préalable du double standard</h3>
+              <p class="salon-lead">Refuser de sacrifier des civils vivants à la pureté d’un slogan, verrouiller l’interdiction d’annexion par des garanties matérielles et ne conclure au double standard qu’après soustraction des causes légitimes.</p>
+              <div class="salon-quote"><p>Pour qu’un tel engagement ne demeure pas déclaratif face à une méfiance historique rationnelle héritée de 1948, la crédibilité du retour exige en outre des verrous matériels extérieurs. Il n’appartient pas à cet essai d’en chiffrer les budgets ni les modalités logistiques, mais d’en poser les prémisses institutionnelles : déploiement sur un territoire géographiquement réduit d’un contingent international multinational alimenté par des contributions réparties entre États garants, suivi vérifiable des droits de réadmission, et engagement préalable des principaux alliés d’Israël à suspendre ou rompre leurs accords de soutien si Israël venait à violer le contrat de non-annexion et de retour. C’est à cette double condition — obligation opposable et coût automatique en cas de rupture — qu’une promesse politique peut devenir une garantie crédible.</p>
+<p>La non-annexion, les droits conservés, les retours et l’autonomie d’une administration palestinienne doivent donc produire des engagements et des actes. Si Israël, une fois le Hamas désarmé et malgré un cadre international agréé, annexait tout ou partie de la bande de Gaza ou verrouillait arbitrairement le retour et l’autonomie palestinienne, il faudrait le condamner sans réserve. Un tel basculement ruinerait son crédit politique devant les nations, en montrant que la guerre visait l’emprise territoriale plutôt que la sécurité ; il heurterait aussi de front, sur le terrain religieux même, la limite examinée au chapitre 9 à propos des Trois Serments, en substituant à une restauration et à une défense autorisées une conquête unilatérale imposée contre les nations. Mon soutien à son combat contre le Hamas ne peut être transformé en autorisation de faire échouer l’avenir palestinien que cette proposition cherche à construire.</p>
+<p>Le point le plus solidement documenté est l’existence d’un traitement institutionnel exceptionnellement structuré autour d’Israël et de la Palestine. Le constat d’une exécution inégale du droit territorial est également sérieux, même si chaque comparaison demande d’examiner les pouvoirs, les circonstances et les raisons avancées. De même, une part de l’attention portée à Israël dans les démocraties occidentales s’explique légitimement par l’alliance politique, le soutien diplomatique et les transferts d’armes décidés par leurs propres gouvernements, comme le souligne le chapitre 33 ; cette variable de coresponsabilité civique doit être soustraite d’emblée. Ce n’est qu’une fois cette explication légitime retranchée que les disproportions résiduelles — tant dans la machinerie onusienne que dans l’indifférence relative à d’autres conflits où des alliés occidentaux sont également impliqués — apparaissent pour ce qu’elles sont : des doubles standards avérés. La naissance d’Israël comporte des déplacements et des responsabilités; les comparaisons historiques ne justifient ni leur effacement ni la thèse d’une singularité malveillante établie sans mesure commune. Dans les débats publics, les médias, les boycotts et les formes de solidarité, certaines asymétries sont démontrables, mais elles doivent l’être par des positions, des programmes et des actes précis, et non par une supposition globale sur les intentions de millions de personnes.</p></div>
+            </article>
+    </div>
+  </section>
+
+  <section id="methode" class="reveal">
+    <div class="section-head">
+      <p class="eyebrow">Discipline analytique</p>
+      <h2>Trois règles appliquées sans exception</h2>
+    </div>
+    <div class="pillars">
+      <article class="pillar">
+        <div class="pillar-idx">01 · COHÉRENCE INTERNE</div>
+        <h3>Prendre les engagements au sérieux</h3>
+        <p>Lorsqu’un acteur invoque une norme religieuse, juridique ou humanitaire comme autorité supérieure, le livre vérifie si ses objectifs et ses actes résistent à sa propre règle.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-idx">02 · CONTRE-PREUVES INTÉGRÉES</div>
+        <h3>Reconstituer le système complet</h3>
+        <p>Chaque verdict intègre les meilleures objections et les pièces défavorables documentées jusqu’en novembre 2026, en nommant explicitement les maillons qui restent débattus.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-idx">03 · SOUSTRACTION PRÉALABLE</div>
+        <h3>Comparer sans fabriquer l’égalité</h3>
+        <p>Avant de conclure au double standard, les causes légitimes de différenciation (alliances, livraisons d’armes, faits propres) sont retranchées afin d’isoler uniquement l’asymétrie avérée.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="livre" class="reveal">
+    <div class="section-head">
+      <p class="eyebrow">Éditions de lecture &amp; dossier éditeurs</p>
+      <h2>Télécharger le dossier et l’ouvrage</h2>
+      <p class="intro">Les quatre fichiers ci-dessous proviennent directement du manuscrit vérifié du 19 novembre 2026. Pour un comité de lecture ou un premier contact, commencer par le dossier éditeur (4 pages A4) et le tiré-à-part des chapitres 30–31 (38 pages).</p>
+    </div>
+    <div class="downloads">
+      <a class="download download-featured" href="downloads/Dossier_Editeur_At-tahlil_Livre-I.pdf" download>
+          <div class="download-top">
+            <span class="badge">DOSSIER ÉDITEURS</span>
+            <span class="arrow" aria-hidden="true">↓</span>
+          </div>
+          <span class="download-label">Note d’intention, synopsis &amp; sommaire</span>
+          <span class="download-desc">Présentation exécutive en 4 pages A4 : positionnement, thèses clés, sommaire des 44 chapitres et transparence méthodologique.</span>
+          <span class="download-meta">4 pages · 239 Ko</span>
+          <span class="download-hash" title="Empreinte SHA-256 intégrale : 7d32910b1f9c7cd0c5e30f8179c3230e3ec723c111332f749c5abac048f41b54">SHA-256 · 7d32910b1f9c…</span>
+        </a><a class="download" href="downloads/At-tahlil-ha-maarakhti_Chapitres-30-31.pdf" download>
+          <div class="download-top">
+            <span class="badge">TIRÉ-À-PART</span>
+            <span class="arrow" aria-hidden="true">↓</span>
+          </div>
+          <span class="download-label">Extrait autonome — Chapitres 30 &amp; 31</span>
+          <span class="download-desc">Protection civile, accueil temporaire, verrous du retour et reconstruction palestinienne avec toutes leurs notes.</span>
+          <span class="download-meta">38 pages · 530 Ko</span>
+          <span class="download-hash" title="Empreinte SHA-256 intégrale : c90a3898404ecb7518056eaa4a6ff93f6d108524157157fc749b2d8cee157d12">SHA-256 · c90a3898404e…</span>
+        </a><a class="download" href="downloads/At-tahlil-ha-maarakhti_Livre-I_edition-numerique.pdf" download>
+          <div class="download-top">
+            <span class="badge">PDF INTÉGRAL</span>
+            <span class="arrow" aria-hidden="true">↓</span>
+          </div>
+          <span class="download-label">Livre complet — Édition numérique A5</span>
+          <span class="download-desc">Les 44 chapitres, l’étude transversale, 1 008 notes liées, la bibliographie classée et l’index thématique.</span>
+          <span class="download-meta">772 pages · 10,1 Mo</span>
+          <span class="download-hash" title="Empreinte SHA-256 intégrale : 406f20d537582b336a93458b348970cd8f6365df3008ac363c14f70008fe7d17">SHA-256 · 406f20d53758…</span>
+        </a><a class="download" href="downloads/At-tahlil-ha-maarakhti_Livre-I.epub" download>
+          <div class="download-top">
+            <span class="badge">EPUB REFLUABLE</span>
+            <span class="arrow" aria-hidden="true">↓</span>
+          </div>
+          <span class="download-label">Livre complet — Format liseuse</span>
+          <span class="download-desc">Édition électronique navigable par chapitre avec notes de fin bidirectionnelles et sommaire interactif.</span>
+          <span class="download-meta">Lecture adaptable · 671 Ko</span>
+          <span class="download-hash" title="Empreinte SHA-256 intégrale : 5ab0905f22a23cfeb8c2728df900827f5d8f3202be37a3dbdfcbd73e096434b7">SHA-256 · 5ab0905f22a2…</span>
+        </a>
+    </div>
+  </section>
+
+  <section id="mettre-a-lepreuve" class="reveal">
+    <div class="section-head">
+      <p class="eyebrow">Audit indépendant &amp; falsifiabilité</p>
+      <h2>Mettre les arguments à l’épreuve</h2>
+      <p class="intro">Ces deux protocoles neutres permettent à tout éditeur, chercheur ou lecteur exigeant d’éprouver la solidité des thèses, des sources et du dispositif des chapitres 30–31 face aux meilleurs travaux concurrents.</p>
+    </div>
+    <div class="prompts-stack">
+      <article class="prompt-card">
+      <div class="prompt-head">
+        <div>
+          <p class="eyebrow">Protocole 01 · Livre intégral</p>
+          <h3>Examen critique et comparaison bibliographique</h3>
+          <p>Teste la cohérence déductive, l’usage des sources, les contre-arguments et les ouvrages comparables sans présupposer le verdict.</p>
+        </div>
+        <button class="copy" type="button" data-copy="prompt-1">Copier le protocole</button>
+      </div>
+      <details class="prompt-details">
+        <summary>Afficher le texte intégral du protocole</summary>
+        <textarea id="prompt-1" readonly aria-label="Examen critique et comparaison bibliographique">Je te fournis un manuscrit sur le conflit israélo-palestinien. Évalue ses arguments à partir des textes effectivement accessibles. L’identité ou la notoriété de l’auteur ne doivent pas servir de raison de le favoriser ou de le défavoriser. Le résultat de l’évaluation n’est pas fixé à l’avance.
+
+Avant de conclure, indique précisément ce que tu as pu lire : fichier reçu, chapitres accessibles, éventuelles limites de traitement, et ouvrages concurrents disponibles en texte intégral, en extraits ou seulement sous forme de notices. Ne présente pas une recherche ciblée comme un inventaire exhaustif de la littérature.
+
+Le projet examiné combine une analyse de la cohérence interne des engagements religieux et politiques, une histoire des décisions, une évaluation morale et juridique, des comparaisons internationales et une proposition de protection et de reconstruction. Recherche les comparables les plus proches, y compris ceux dont les conclusions divergent.
+
+Procède ainsi :
+
+1. Reconstitue la thèse et les chaînes d’arguments principales avant de les juger. Distingue faits documentés, interprétations, hypothèses, principes moraux et propositions opérationnelles.
+2. Évalue l’usage des sources : fidélité, contexte, précision des références, recours aux spécialistes et traitement des éléments défavorables. Vérifie des pièces déterminantes lorsque tu disposes des outils nécessaires. Signale explicitement une vérification impossible.
+3. Examine la cohérence : les conclusions suivent-elles des prémisses ? Les acteurs sont-ils soumis à des critères comparables ? Les explications concurrentes les plus fortes ont-elles reçu une réponse substantielle ?
+4. Compare quelques dossiers communs avec des ouvrages identifiés. Cite les passages ou pages disponibles de part et d’autre. Sépare l’étendue du périmètre de la qualité d’analyse sur un même terrain. L’absence d’un sujet extérieur au projet d’un autre livre n’est pas, à elle seule, un défaut de ce livre.
+5. Identifie l’apport propre : arguments nouveaux, synthèse, sources, distinctions et propositions. Ne confonds pas originalité d’une combinaison, justesse des conclusions et supériorité générale.
+6. Donne les objections les plus importantes, avec leur emplacement précis et ce qu’elles changent réellement. Reconnais les arguments solides autant que les erreurs.
+
+Présente un tableau des comparables, puis une appréciation motivée. Si tu proposes des notes ou un classement, expose les critères, les pondérations et les limites; vérifie le calcul. Si les textes nécessaires manquent, indique qu’un classement n’est pas établi plutôt que de simuler leur lecture. Tu peux conclure que le manuscrit est supérieur sur certains dossiers, comparable, inférieur, ou distinct par son projet, selon les éléments examinés.
+
+La demande porte sur la solidité démontrée du livre, sans obligation de confirmer ou de contredire sa thèse. Conserve les critiques et réserves dans la réponse finale.</textarea>
+      </details>
+    </article>
+      <article class="prompt-card">
+      <div class="prompt-head">
+        <div>
+          <p class="eyebrow">Protocole 02 · Chapitres 30–31</p>
+          <h3>Protection civile, accueil temporaire et reconstruction</h3>
+          <p>Confronte la proposition de mise à l’abri et de réhabilitation aux cadres diplomatiques documentés (sommet du Caire, résolution 2803).</p>
+        </div>
+        <button class="copy" type="button" data-copy="prompt-2">Copier le protocole</button>
+      </div>
+      <details class="prompt-details">
+        <summary>Afficher le texte intégral du protocole</summary>
+        <textarea id="prompt-2" readonly aria-label="Protection civile, accueil temporaire et reconstruction">Je te fournis les chapitres 30–31 d’At-tahlil ha-ma’arakhti — Livre I, ou le manuscrit complet. Ces chapitres traitent de la protection, de l’accueil volontaire, du retour, de la réhabilitation et de la reconstruction palestiniennes. Si un autre état du livre est fourni, identifie ces chapitres par leur titre avant de t’appuyer sur leur numéro.
+
+Évalue cette proposition sans présupposer qu’elle est la meilleure ou qu’elle doit échouer. Distingue les objectifs annoncés de ses mécanismes effectivement décrits. Indique les limites du texte et des sources auxquels tu as accès.
+
+1. Reconstitue le dispositif : populations concernées, caractère volontaire des départs, protection de ceux qui restent, retour, droits politiques, désarmement, gouvernance, sécurité, financement, services et contrôle des engagements. N’ajoute pas silencieusement un mécanisme absent du texte.
+2. Explicite les critères d’évaluation : protection immédiate des civils, réduction durable des violences, sécurité des deux populations, droits et consentement, initiative palestinienne, faisabilité politique, capacités d’accueil, financement, justice, contrôle et traitement des échecs. Analyse les conflits possibles entre ces objectifs.
+3. Compare le dispositif aux propositions pertinentes réellement documentées : plan égyptien adopté au sommet arabe du Caire en mars 2025, résolution 2803 et cadres de transition associés, propositions israéliennes, américaines, palestiniennes et travaux indépendants disponibles. Précise leur date et distingue un texte adopté, une proposition, une annonce politique et sa mise en œuvre. Ne suppose pas leur équivalence.
+4. Pour chaque comparaison, examine les mêmes questions : qui agit, avec quels moyens et quel consentement; qui garantit les droits; qui finance; comment la population est représentée; quelles conditions permettent de passer à l’étape suivante; que se passe-t-il si un acteur bloque le retour, le désarmement, l’aide ou le financement ?
+5. Sépare les éléments favorables, les faiblesses décisives, les conditions nécessaires encore non satisfaites et les inconnues. Une difficulté commune à tous les projets ne constitue pas automatiquement un avantage du projet examiné.
+6. Présente la meilleure objection à la proposition, puis la meilleure réponse permise par le texte et les pièces. Signale ce qui resterait à préciser ou à démontrer.
+
+Conclue sur les avantages et inconvénients comparatifs établis. Un verdict de « plan le plus réaliste » doit préciser le corpus comparé, les objectifs, les conditions retenues et les incertitudes. Ne réduis pas la comparaison à l’attractivité d’un objectif ou à la réputation de son auteur. Si les données opérationnelles manquent pour départager deux projets, identifie exactement lesquelles.</textarea>
+      </details>
+    </article>
+    </div>
+    <div class="notice">
+      <strong>Exigence de transparence sur les évaluations externes.</strong> Toute évaluation publiée à partir de ces protocoles devra mentionner son prompt exact, sa date, l’outil utilisé, le périmètre réellement lu et l’ensemble des réserves formulées.
+    </div>
+  </section>
+
+  <section id="droits" class="reveal">
+    <div class="rights">
+      <strong>Droits de diffusion, méthode et contact éditorial</strong>
+      © 2026 Sasha Bellalou. La redistribution gratuite de cette édition numérique complète et non modifiée est autorisée à des fins non commerciales, en conservant le nom de l’auteur, le titre et les présentes mentions. Pour toute proposition éditoriale, demande presse, calibrage grand format ou transmission en format éditable, contacter l’auteur. Les droits des tiers sur les documents cités et les exceptions légales applicables demeurent réservés.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>At-tahlil ha-ma’arakhti — Livre I · Sasha Bellalou</span>
+    <span>Édition numérique · 19 novembre 2026 · 44 chapitres · 1 008 notes</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Protocole copié dans le presse-papiers</div>
+<script>
+// Copy protocol buttons
+document.querySelectorAll('.copy').forEach(button => button.addEventListener('click', async () => {
+  const box = document.getElementById(button.dataset.copy);
+  try {
+    await navigator.clipboard.writeText(box.value);
+  } catch {
+    const details = box.closest('details');
+    const wasOpen = details ? details.open : true;
+    if (details && !wasOpen) details.open = true;
+    box.focus();
+    box.select();
+    document.execCommand('copy');
+    if (details && !wasOpen) details.open = false;
+  }
+  const toast = document.getElementById('toast');
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 1800);
+}));
+
+// Reading Salon tabs
+const salonTabs = document.querySelectorAll('.salon-tab');
+const salonPanels = document.querySelectorAll('.salon-panel');
+salonTabs.forEach(tab => tab.addEventListener('click', () => {
+  const id = tab.dataset.tab;
+  salonTabs.forEach(t => {
+    const active = t.dataset.tab === id;
+    t.classList.toggle('is-active', active);
+    t.setAttribute('aria-selected', String(active));
+  });
+  salonPanels.forEach(p => {
+    const active = p.id === id;
+    p.classList.toggle('is-active', active);
+    p.hidden = !active;
+  });
+}));
+
+// Interactive 44-chapter explorer
+let activePart = 'all';
+const chCards = [...document.querySelectorAll('.ch-card')];
+const chSearch = document.getElementById('ch-search');
+const chCount = document.getElementById('ch-count');
+function applyChapterFilter() {
+  const q = (chSearch.value || '').trim().toLowerCase();
+  let visible = 0;
+  chCards.forEach(card => {
+    const matchPart = activePart === 'all' || card.dataset.part === activePart;
+    const matchText = !q || card.dataset.search.includes(q);
+    const show = matchPart && matchText;
+    card.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  chCount.textContent = `${visible} chapitre${visible > 1 ? 's' : ''} affiché${visible > 1 ? 's' : ''} sur 44`;
+}
+document.querySelectorAll('.filter-btn').forEach(btn => btn.addEventListener('click', () => {
+  activePart = btn.dataset.filter;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('is-active', b === btn));
+  applyChapterFilter();
+}));
+chSearch.addEventListener('input', applyChapterFilter);
+
+// Subtle progressive scroll reveal (safe fallback for static screenshots)
+if ('IntersectionObserver' in window && !navigator.webdriver) {
+  document.documentElement.classList.add('js-ready');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+}
+</script>
+</body>
+</html>

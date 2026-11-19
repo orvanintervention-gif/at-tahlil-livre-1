@@ -1,0 +1,22 @@
+[
+  {
+    "file": "Dossier_Editeur_At-tahlil_Livre-I.pdf",
+    "sha256": "7d32910b1f9c7cd0c5e30f8179c3230e3ec723c111332f749c5abac048f41b54",
+    "bytes": 244923
+  },
+  {
+    "file": "At-tahlil-ha-maarakhti_Chapitres-30-31.pdf",
+    "sha256": "c90a3898404ecb7518056eaa4a6ff93f6d108524157157fc749b2d8cee157d12",
+    "bytes": 542468
+  },
+  {
+    "file": "At-tahlil-ha-maarakhti_Livre-I_edition-numerique.pdf",
+    "sha256": "406f20d537582b336a93458b348970cd8f6365df3008ac363c14f70008fe7d17",
+    "bytes": 10585129
+  },
+  {
+    "file": "At-tahlil-ha-maarakhti_Livre-I.epub",
+    "sha256": "5ab0905f22a23cfeb8c2728df900827f5d8f3202be37a3dbdfcbd73e096434b7",
+    "bytes": 687281
+  }
+]
